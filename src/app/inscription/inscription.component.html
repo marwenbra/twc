@@ -1,0 +1,32 @@
+
+<strong>Session {{nom}}</strong>
+
+<div class="container">
+
+    <div class="card-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th style="width: 18%">Nom</th>
+            <th style="width: 18%">Prenom</th>
+            <th style="width: 20%">Email</th>
+            <th style="width: 30%">Date debut</th>
+            <th style="width: 30%">Date fin</th>
+            </tr>
+
+        </thead>
+        <tbody  *ngFor="let inscri of us">
+  
+          <tr>
+            <td> {{inscri.Nom}}</td>
+            <td> {{inscri.Prenom}}</td>
+            <td> {{inscri.Email}}</td>
+            <td> {{inscri.Session.Date_debut}}</td>
+            <td> {{inscri.Session.Date_fin}}</td>
+
+
+        </tr>
+    </tbody>
+
+  </table>
+</div>
